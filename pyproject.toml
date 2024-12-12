@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "docker-python-base"
+version = "0.1.0"
+description = "Docker base for Python code"
+authors = ["SchwartzKamel"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+sphinx = "^8.1.3"
+httpx = "^0.28.1"
+
+[tool.poetry-auto-export]
+output = "requirements.txt"
+without_hashes = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
