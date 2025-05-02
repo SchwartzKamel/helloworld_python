@@ -2,10 +2,12 @@
 ================================================
 Collection of utilities to use in an application
 """
+
 from typing import Optional
 import httpx
 
-def GET_page(url:str, api_key: Optional[str] = None) -> str:
+
+def GET_page(url: str, api_key: Optional[str] = None) -> str:
     """Send a GET request to a URL and return the response as text
 
     Args:

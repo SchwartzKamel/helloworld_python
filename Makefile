@@ -1,8 +1,19 @@
-build:
-	docker build -t sierrahackingco/helloworld_python:latest .
+.PHONY: test build run clean
 
 test:
-	docker run --name helloworld_python sierrahackingco/helloworld_python:latest
+	pytest -v --cov=app --cov-report=term-missing
 
-help:
-	@echo "build test"
+docker-up:
+	docker compose up --build
+
+docker-down:
+	docker compose down
+
+build:
+	docker build -t helloworld:latest .
+
+run:
+	docker run -p 8000:8000 helloworld:latest
+
+clean:
+	docker rmi helloworld:test helloworld:latest
