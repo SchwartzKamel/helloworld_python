@@ -34,57 +34,12 @@
   <section id="requirements">
 <h1>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">¶</a></h1>
 <ul class="simple">
-<li><p>poetry has <cite>poetry-auto-export</cite> plugin configured in <cite>poetry.lock</cite></p></li>
+<li><p>poetry has <cite>poetry-auto-export &lt;https://pypi.org/project/poetry-auto-export/&gt;</cite> plugin configured in <cite>poetry.lock</cite></p></li>
 <li><p>API key from <a class="reference external" href="https://randommer.io/">Randommer.io</a></p></li>
 </ul>
 </section>
-<section id="module-app.main">
-<span id="docker-python-base-documentation"></span><h1>docker-python-base documentation<a class="headerlink" href="#module-app.main" title="Link to this heading">¶</a></h1>
-<section id="main-py">
-<h2>main.py<a class="headerlink" href="#main-py" title="Link to this heading">¶</a></h2>
-<p>Core python file that runs the application</p>
-</section>
-<dl class="py function">
-<dt class="sig sig-object py" id="app.main.hello_world">
-<span class="sig-prename descclassname"><span class="pre">app.main.</span></span><span class="sig-name descname"><span class="pre">hello_world</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'World'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#app.main.hello_world" title="Link to this definition">¶</a></dt>
-<dd><p>Example of Hello World that has a paramater to display for auto-doc</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Name value. Defaults to “World”.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="app.main.main">
-<span class="sig-prename descclassname"><span class="pre">app.main.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#app.main.main" title="Link to this definition">¶</a></dt>
-<dd><p>Main function, core logic of the application</p>
-</dd></dl>
-
-<section id="util-py">
-<span id="module-app.modules.api.util"></span><h2>util.py<a class="headerlink" href="#util-py" title="Link to this heading">¶</a></h2>
-<p>Collection of utilities to use in an application</p>
-</section>
-<dl class="py function">
-<dt class="sig sig-object py" id="app.modules.api.util.GET_page">
-<span class="sig-prename descclassname"><span class="pre">app.modules.api.util.</span></span><span class="sig-name descname"><span class="pre">GET_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_key</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#app.modules.api.util.GET_page" title="Link to this definition">¶</a></dt>
-<dd><p>Send a GET request to a URL and return the response as text</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>url</strong> (<em>str</em>) – URL to send a GET request to</p></li>
-<li><p><strong>api_key</strong> (<em>Optional</em><em>[</em><em>str</em><em>]</em><em>, </em><em>optional</em>) – Randommer.io API key. Defaults to None.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>HTTP GET response as text</p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>str</p>
-</dd>
-</dl>
-</dd></dl>
-
+<section id="docker-python-base-documentation">
+<h1>docker-python-base documentation<a class="headerlink" href="#docker-python-base-documentation" title="Link to this heading">¶</a></h1>
 <div class="toctree-wrapper compound">
 </div>
 </section>
